@@ -1,0 +1,157 @@
+body{
+    background-image: url(../src/images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    max-width: 1450px;
+    min-width: 375px;
+    min-height: 100vh;
+    flex-wrap: wrap;
+   
+}
+main {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-items: center;
+    padding: 5%;}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo img {
+    margin-bottom: 5%;
+    width: 22%;
+}
+
+.conteudo-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.conteudo-principal .texto {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+        
+}
+
+.conteudo-principal .texto h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-bottom: 5%;
+    
+    
+}
+
+.conteudo-principal .texto p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin-bottom: 5%;
+}
+
+.conteudo-principal .texto  a {
+    
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    margin: 5%;
+    background-color: #ffff;
+    border-radius: 20px;
+    padding: 2% 10%;
+    transition: 0.5s;
+    box-shadow: none hsl(257, 40%, 49%) ;
+}
+
+
+
+.texto  a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #ffff;
+}
+
+
+.social  {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    transition: 0.5s;
+    padding-bottom: 10px;
+}
+
+.social a {
+    color: #ffff;
+    margin: 1px;
+    
+}
+
+.social a {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 9px;
+    padding-bottom: 4px;
+    transition: 0.5s;
+    
+}
+
+.social a :hover{
+    color: hsl(300, 69%, 71%);
+}
+
+.social :hover{
+    color:hsl(300, 69%, 71%);
+}
+
+@media(max-width:1260px){
+    .image img {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:450px){
+    .conteudo-principal {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .conteudo-principal .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .logo img{
+        width: 150px;
+        padding: 25px;
+        gap: 5%;
+    }
+
+    .conteudo-principal .texto h1{
+        font-size: 25px;
+        margin-top: 20px;
+         
+    }
+
+    .conteudo-principal .texto p{
+        font-size: 18.5px;
+    }
+
+    .social{
+        display: flex;
+        justify-content: center;
+        gap: 5px;}
+    
+}
